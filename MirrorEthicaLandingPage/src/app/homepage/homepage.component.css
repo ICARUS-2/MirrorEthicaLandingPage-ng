@@ -1,0 +1,25 @@
+.homepageWrapper
+{
+    background-image: url('../../assets/img/home-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+}
+
+.heroText
+{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.spacer
+{
+    margin-top: 100px;
+}
+
+.leersImage
+{
+    align-self: flex-start;
+    max-width: 400px;
+}
