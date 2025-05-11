@@ -1,9 +1,7 @@
 .homepageWrapper
 {
     background-image: url('../../assets/img/home-bg.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1000px;
+    background-size:cover;
     width: 100%;
 }
 
@@ -30,6 +28,27 @@
     object-fit: contain;
 }
 
+.carouselButton
+{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: xx-large;
+    font-weight:900;
+}
+
+.carouselButton:hover
+{
+    color: cyan;
+}
+
+.carousel-caption
+{
+    color: cyan;
+    text-align: center;
+    display: block;
+    height: 40px;
+}
 
 .leersImage
 {
