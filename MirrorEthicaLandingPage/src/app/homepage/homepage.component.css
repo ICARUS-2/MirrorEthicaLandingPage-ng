@@ -23,3 +23,17 @@
     align-self: flex-start;
     max-width: 400px;
 }
+
+.leersSectionText
+{
+    max-width: 400px;
+    font-size: 23.5px;
+}
+
+@media screen and (max-width:1000px) 
+{
+    .leersSection
+    {
+        flex-direction: column;
+    }
+}
