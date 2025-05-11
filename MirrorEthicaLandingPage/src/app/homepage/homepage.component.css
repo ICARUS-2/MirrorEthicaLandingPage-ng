@@ -18,6 +18,18 @@
     margin-top: 100px;
 }
 
+.carouselItem
+{
+    height: 500px;
+}
+ 
+.carouselImage
+{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 .leersImage
 {
     align-self: flex-start;

@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { RouterLink } from '@angular/router';
 import { FlipCardComponent } from "../flip-card/flip-card.component";
+import { AboutComponent } from "../about/about.component";
 
 @Component({
   selector: 'app-homepage',
-  imports: [RouterLink, FlipCardComponent],
+  imports: [RouterLink, AboutComponent],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css'
 })
