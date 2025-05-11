@@ -8,21 +8,32 @@
     max-width: 400px;
 }
 
-.carouselOuter
+.carouselItem
 {
-    width: 29%;
+    height: 500px;
 }
-
+ 
 #carouselExampleControls
 {
+    max-width: 500px;
+}
+
+.carouselImage
+{
+    height: 100%;
     width: 100%;
+    object-fit: contain;
 }
 
 .carouselButton
 {
     background-color: transparent;
     border: none;
-    margin: 40px;
+}
+
+.carouselText
+{
+    font-size: x-large;
 }
 
 @media screen and (max-width:1000px) 
