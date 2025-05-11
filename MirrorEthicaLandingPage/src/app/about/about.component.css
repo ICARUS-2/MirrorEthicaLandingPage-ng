@@ -8,10 +8,33 @@
     max-width: 400px;
 }
 
+.carouselOuter
+{
+    width: 29%;
+}
+
+#carouselExampleControls
+{
+    width: 100%;
+}
+
+.carouselButton
+{
+    background-color: transparent;
+    border: none;
+    margin: 40px;
+}
+
 @media screen and (max-width:1000px) 
 {
     .carouselTextSection
     {
         flex-direction: column;
     }
+
+    .carouselOuter
+    {
+        width: 100%;
+    }
+
 }
