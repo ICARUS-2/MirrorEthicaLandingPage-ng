@@ -1,0 +1,42 @@
+.navbarBrandImage
+{
+    height: 100px;
+}
+
+.navbar
+{
+    background-color: black;
+}
+
+.navLink
+{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    font-size: large;
+}
+
+.navLink:hover
+{
+    color: gray !important;
+}
+
+.contactButton
+{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width:1000px) 
+{
+    .navbarContainer
+    {
+        flex-direction: column;
+        align-items: center;
+    }   
+
+    .navbarBrandImage
+    {
+        height: 75px;
+    }
+
+}
