@@ -12,6 +12,8 @@ export class FlipCardComponent
   @Input() width: string = "300px";
   @Input() height: string = "300px";
   @Input() imgSrc: string = "";
+  @Input() title: string = "";
+  @Input() desc: string = "";
 
   constructor()
   {
