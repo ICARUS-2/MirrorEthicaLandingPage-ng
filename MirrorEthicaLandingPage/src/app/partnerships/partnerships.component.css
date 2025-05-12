@@ -1,0 +1,21 @@
+.partnershipsWrapper
+{
+    background-image: url('../../assets/img/home-bg.webp');
+    background-size:cover;
+    width: 100%;
+}
+
+.spacer
+{
+    margin-top: 100px;
+}
+
+.contactForm
+{
+    width: 40%;
+}
+
+.form-control
+{
+    border: 2px solid rgb(50,50,50);
+}
