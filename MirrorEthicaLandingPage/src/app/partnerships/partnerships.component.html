@@ -16,26 +16,27 @@
 
         <h1 class="text-light  text-center">Initiate Inquiry</h1>
 
-        <form class="text-light contactForm">
+                                                    <!--  SWAP WITH CUSTOM LINK   -->
+        <form class="text-light contactForm"  action="https://formspree.io/f/mdkgwyje" method="POST">
 
         <div class="mb-3">
             <label for="contactFormName" class="form-label">Name</label>
-            <input type="text" class="form-control bg-dark" id="contactFormName">
+            <input name="name" type="text" class="form-control text-light bg-dark" id="contactFormName">
         </div>
 
         <div class="mb-3">
             <label for="contactFormEmail" class="form-label">Email address</label>
-            <input type="email" class="form-control bg-dark" id="contactFormEmail">
+            <input name="email" type="email" class="form-control text-light bg-dark" id="contactFormEmail">
         </div>
 
         <div class="mb-3">
             <label for="contactFormSubject" class="form-label">Subject</label>
-            <input type="text" class="form-control bg-dark" id="contactFormSubject">
+            <input name="subject" type="text" class="form-control text-light bg-dark" id="contactFormSubject">
         </div>
 
         <div class="mb-3">
             <label for="contactFormMessage" class="form-label">Subject</label>
-            <textarea class="form-control bg-dark" id="contactFormMessage" placeholder="Your message..."></textarea> 
+            <textarea name="message" class="form-control bg-dark text-light" id="contactFormMessage" placeholder="Your message..."></textarea> 
         </div>
         
 
