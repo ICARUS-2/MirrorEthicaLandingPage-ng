@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BlogItemComponent } from "../blog-item/blog-item.component";
-import { HttpClient, provideHttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import BlogDataModel from '../../models/BlogDataModel';
 
 @Component({
@@ -19,9 +19,20 @@ export class BlogComponent implements OnInit {
   
     ngOnInit(): void
     {   
-      this.httpClient.get<BlogDataModel[]>('/assets/text/blog-items.json').subscribe( d => 
+      this.httpClient.get<Object[]>('/assets/text/blog-items.json').subscribe( response => 
       {
-        console.log(d);
+        var mapped: BlogDataModel[] = response.map( item => 
+          {
+            //@ts-ignore
+            return new BlogDataModel(  new Date(item.date), item.title, item.textContent );
+          })
+        
+        mapped.sort( (a: BlogDataModel, b:BlogDataModel ) =>
+        {
+          return b.date.getTime() - a.date.getTime();
+        } )
+
+        console.log(mapped);
       })
     }
 
