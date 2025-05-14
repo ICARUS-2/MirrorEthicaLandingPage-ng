@@ -9,10 +9,11 @@ import { Component, Input } from '@angular/core';
 
 export class BlogItemComponent {
 
-  @Input() id: string = "";
+  @Input() identifier: string = "";
   @Input() date: Date = new Date();
   @Input() title: string = "";
   @Input() textContent: string = "";
+  @Input() showByDefault: boolean = false;
 
   constructor()
   {
@@ -21,6 +22,7 @@ export class BlogItemComponent {
 
   getFullHeader(): string
   {
-    return this.date.getDay() + " " + this.date.toLocaleString('en-US', { month: 'long' }) + " " + this.date.getFullYear() + " | " + this.title; 
+    return this.date.getDate() + " " + this.date.toLocaleString('en-US', { month: 'long' }) + " " + this.date.getFullYear() + " | " + this.title; 
   }
+
 }

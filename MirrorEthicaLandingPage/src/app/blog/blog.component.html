@@ -5,7 +5,9 @@
 
     <div class="accordion" id="accordionExample">
 
-    
+    <ng-container *ngFor="let blogItem of blogDataArr; index as i" >
+        <app-blog-item [showByDefault]="i == 0" [identifier]="i.toString()" [date]="blogItem.date" [title]="blogItem.title" [textContent]="blogItem.textContent" ></app-blog-item>
+    </ng-container>
 
     </div>
 </div>

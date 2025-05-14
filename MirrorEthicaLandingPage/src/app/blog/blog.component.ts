@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { BlogItemComponent } from "../blog-item/blog-item.component";
 import { HttpClient } from '@angular/common/http';
 import BlogDataModel from '../../models/BlogDataModel';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-blog',
-  imports: [BlogItemComponent],
+  imports: [BlogItemComponent, NgFor],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css'
 })
@@ -32,7 +33,7 @@ export class BlogComponent implements OnInit {
           return b.date.getTime() - a.date.getTime();
         } )
 
-        console.log(mapped);
+        this.blogDataArr = mapped;
       })
     }
 
