@@ -1,4 +1,28 @@
 .accordion-button
 {
-    background-color: gray;
+    background-color: rgb(20,20,20);
+    color: lightgray;
+    font-weight: bolder;
+    border: 0px;
+    border-radius: 0px !important;
+}
+
+.accordion-header
+{
+    border: 0px;
+}
+
+.accordion-item
+{
+    border: 0px;
+}
+
+.accordion-collapse
+{
+    background-color: rgb(20,20,20);
+    color: lightgray;
+}
+
+.accordion-button::after {
+  filter: invert(67%) sepia(37%) saturate(1600%) hue-rotate(145deg) brightness(101%) contrast(102%);
 }
